@@ -1,0 +1,15 @@
+<op-root>
+    <div class="v-center">
+        <div class="app-menu" *ngIf="showMenu">
+            <div><a routerLink="/" routerLinkActive="active">Content</a></div>
+            <div><a routerLink="/widgets" routerLinkActive="active">Widgets</a></div>
+            <div><a routerLink="/modals" routerLinkActive="active">Modals</a></div>
+            <div><a routerLink="/notifications" routerLinkActive="active">Notifications</a></div>
+        </div>
+        <div style="margin-top: 16px">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <op-modals></op-modals>
+    <op-notices [limit]="3"></op-notices>
+</op-root>
