@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { OpNoticesService } from '@onionbutler/ngop';
+import { OpNoticeService } from '@onionbutler/ngop';
 
 
 @Component({
@@ -11,7 +11,7 @@ export class NotificationsPageComponent {
     private notificationId = 0;
 
 
-    constructor(private noticesService: OpNoticesService) {}
+    constructor(private noticesService: OpNoticeService) {}
 
 
     showNotification(): void {

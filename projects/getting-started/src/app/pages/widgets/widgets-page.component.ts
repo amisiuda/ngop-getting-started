@@ -9,6 +9,6 @@ import { OpWidgetConfig } from '@onionbutler/ngop';
 export class WidgetsPageComponent {
     
     readonly widgetConfig: OpWidgetConfig = {
-        module: () => import('./test-widget/test-widget.module'),
+        module: () => import('./test-widget/test-widget.module').then(m => m.TestWidgetModule),
     };
 }

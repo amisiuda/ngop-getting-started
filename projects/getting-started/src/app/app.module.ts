@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { OpContentModule, OpCoreModule, OpModalsModule, OpNoticesModule, OpWidgetModule } from '@onionbutler/ngop';
+import { OpContentModule, OpCoreModule, OpModalModule, OpNoticeModule, OpWidgetModule } from '@onionbutler/ngop';
 import { AppComponent } from './app.component';
 import { DefaultModalWrapperComponent } from './modal-wrappers/default-modal-wrapper.component';
 import { DefaultLoaderComponent } from './loaders/default-loader.component';
@@ -51,8 +51,8 @@ import { TestModalComponent } from './pages/modals/test-modal/test-modal.compone
         }),
         OpContentModule,
         OpWidgetModule,
-        OpModalsModule,
-        OpNoticesModule,
+        OpModalModule,
+        OpNoticeModule,
     ],
     declarations: [
         AppComponent,

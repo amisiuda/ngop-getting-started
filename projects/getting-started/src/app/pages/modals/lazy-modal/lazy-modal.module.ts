@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { OpModalsModule, OpWidget } from '@onionbutler/ngop';
+import { OpModalModule, OpWidget } from '@onionbutler/ngop';
 import { LazyModalComponent } from './lazy-modal.component';
 
 
@@ -10,7 +10,7 @@ import { LazyModalComponent } from './lazy-modal.component';
 @NgModule({
     imports: [
         CommonModule,
-        OpModalsModule,
+        OpModalModule,
     ],
     declarations: [
         LazyModalComponent,

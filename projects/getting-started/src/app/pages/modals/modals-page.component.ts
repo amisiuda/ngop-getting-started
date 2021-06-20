@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { OpModalsService } from '@onionbutler/ngop';
+import { OpModalService } from '@onionbutler/ngop';
 import { TestModalComponent } from './test-modal/test-modal.component';
 
 
@@ -9,7 +9,7 @@ import { TestModalComponent } from './test-modal/test-modal.component';
 })
 export class ModalsPageComponent {
     
-    constructor(private modalsService: OpModalsService) {}
+    constructor(private modalsService: OpModalService) {}
 
 
     showModal(): void {
@@ -21,7 +21,7 @@ export class ModalsPageComponent {
 
     showLazyModal(): void {
         this.modalsService.openLazy({
-            module: () => import('./lazy-modal/lazy-modal.module'),
+            module: () => import('./lazy-modal/lazy-modal.module').then(m => m.LazyModalModule),
         });
     }
 }
